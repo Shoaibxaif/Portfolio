@@ -22,11 +22,22 @@ const Home = () => {
   return (
     <Container maxW="full" maxH="full" bgColor="#070707">
       <Flex justifyContent="flex-end">
-        <Image src={cloudImage} alt="Cloud" />
+        <Image
+          src={cloudImage}
+          alt="Cloud"
+          w={["200px", "300px", "400px"]}
+          h={["auto", "auto", "auto"]}
+        />
       </Flex>
 
       <Stack direction={["column", "row"]} h={"100vh"}>
-        <Box overflow={"hidden"} paddingX={{ base: "15px", md: "50px" }} flex="1">
+        <Box
+          overflow="hidden"
+          paddingX={{ base: "15px", md: "50px" }}
+          flex="1"
+          height="auto" 
+          position="relative" 
+        >
           <Text color="#ffffff" fontSize={{ base: "18px", md: "25px" }}>
             Hi all. I am
           </Text>
@@ -96,11 +107,28 @@ const Home = () => {
           />
         </Box>
 
-        <Box flex="1">
+        <Box flex="1" display={{ base: "none", md: "block" }}>
           <Image src={Land} position="absolute" mt={2} zIndex="1" />
-          <Image src={Land2} position="absolute" ml={600} mt={80} zIndex="1" />
-          <Image src={cloudImage} w={"400px"} alt="Cloud" position="absolute" mt={"290px"} zIndex="0"  />
-          <Image src={LandComputer} width={"400px"} className="right-image"  zIndex="2"/>
+          <Image
+            src={Land2}
+            position="absolute"
+            className="land2-image"
+            zIndex="1"
+          />
+          <Image
+            src={cloudImage}
+            w={"400px"}
+            alt="Cloud"
+            position="absolute"
+            mt={"290px"}
+            zIndex="0"
+          />
+          <Image
+            src={LandComputer}
+            width={"400px"}
+            className="right-image"
+            zIndex="2"
+          />
         </Box>
       </Stack>
     </Container>

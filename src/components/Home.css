@@ -6,3 +6,7 @@
     
     transform: translateX(40%); /* Move the image to the left completely */
   }
+.land2-image {
+    
+    transform: translate(500%, 300%);
+  }
