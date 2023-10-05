@@ -1,0 +1,8 @@
+.left-image {
+    
+    transform: translateX(-70%); /* Move the image to the left completely */
+  }
+.right-image {
+    
+    transform: translateX(40%); /* Move the image to the left completely */
+  }
