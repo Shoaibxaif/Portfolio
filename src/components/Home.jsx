@@ -30,13 +30,13 @@ const Home = () => {
         />
       </Flex>
 
-      <Stack direction={["column", "row"]} h={"100vh"}>
+      <Stack direction={["column", "row"]} >
         <Box
           overflow="hidden"
           paddingX={{ base: "15px", md: "50px" }}
           flex="1"
-          height="auto" 
-          position="relative" 
+          height="auto"
+          position="relative"
         >
           <Text color="#ffffff" fontSize={{ base: "18px", md: "25px" }}>
             Hi all. I am
@@ -72,7 +72,11 @@ const Home = () => {
               const <span style={{ color: "#43D9AD" }}>githubLink</span>{" "}
               <span style={{ color: "#ffffff" }}> = </span>{" "}
               <span style={{ color: "#E99287" }}>
-                <Link href="https://github.com/Shoaibxaif">
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/Shoaibxaif"
+                >
                   {" "}
                   "https://github.com/Shoaibxaif"{" "}
                 </Link>

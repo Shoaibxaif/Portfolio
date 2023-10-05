@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as RouterLink } from "react-router-dom";
 import {
   Button,
   Drawer,
@@ -66,19 +67,19 @@ export function PlacementExample() {
               alignItems={"flex-start"}
               style={{ textDecoration: "none" }}
             >
-              <Link to="/" _hover={{ color: "white" }}>
+              <Link as={RouterLink} to="/" _hover={{ color: "white" }}>
                 _Hello
               </Link>
-              <Link to="/" _hover={{ color: "white" }}>
+              <Link as={RouterLink} to="/about" _hover={{ color: "white" }}>
                 _About-me
               </Link>
-              <Link to="/" _hover={{ color: "white" }}>
+              <Link as={RouterLink} to="/skill" _hover={{ color: "white" }}>
                 _Skills
               </Link>
-              <Link to="/" _hover={{ color: "white" }}>
+              <Link as={RouterLink} to="/project" _hover={{ color: "white" }}>
                 _Projects
               </Link>
-              <Link to="/" _hover={{ color: "white" }}>
+              <Link as={RouterLink} to="/contact" _hover={{ color: "white" }}>
                 _Contact-me
               </Link>
             </VStack>
