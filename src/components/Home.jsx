@@ -20,7 +20,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <Container maxW="full" maxH="full" bgColor="#070707">
+    <Container maxW="full" maxH="105vh" bgColor="#070707">
       <Flex justifyContent="flex-end">
         <Image
           src={cloudImage}

@@ -1,14 +1,66 @@
-import { Box, Container, HStack, Image, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  HStack,
+  Image,
+  Stack,
+  Text,
+  Grid,
+} from "@chakra-ui/react";
 import React from "react";
 import "./About.css";
 import profile from "../Assests/profile.jpeg";
 import commentIcon from "../Assests/comments-icon.svg";
 import Star from "../Assests/Star.svg";
 import TubeLand from "../Assests/TubeLand.png";
-const About = () => {
+import html from "../Assests/html.png";
+const Skill = () => {
+  const skillItem = [
+    {
+      id: 1,
+      imageSrc: html,
+    },
+    {
+      id: 1,
+      imageSrc: html,
+    },
+    {
+      id: 1,
+      imageSrc: html,
+    },
+    {
+      id: 1,
+      imageSrc: html,
+    },
+    {
+      id: 1,
+      imageSrc: html,
+    },
+    {
+      id: 1,
+      imageSrc: html,
+    },
+    {
+      id: 1,
+      imageSrc: html,
+    },
+    {
+      id: 1,
+      imageSrc: html,
+    },
+    {
+      id: 1,
+      imageSrc: html,
+    },
+    {
+      id: 1,
+      imageSrc: html,
+    },
+  ];
+
   return (
     <Container maxW="full" maxH="120vh" bgColor="#070707" pt={5}>
-      <Container maxW="100%" maxH="120vh" overflow="hidden" position="relative">
+      <Container  maxH="120vh"  mt={5}>
         <HStack h={"60px"} p={2}>
           <Box flex="1">
             <HStack>
@@ -58,53 +110,34 @@ const About = () => {
           padding={30}
           border="1px solid #1E2D3D"
           mt={2}
+          h={{ base: "80%", md: "100%" }}
         >
-          <Text
-            zIndex={1}
-            color="#607B96"
-            fontSize={{ base: "10px", md: "16px" }}
-          >
-            <Text as={"span"} color="#4D5BCE">
-              {" "}
-              import{" "}
-              <Text as={"span"} color="#43D9AD">
-                aboutMe
-              </Text>{" "}
-              from
-            </Text>{" "}
-            <Text as={"span"} color="#E99287">
-              ‘./portfolio’
-            </Text>{" "}
-            <br /> <br />
-            I'm Mohammad Shoaib, a passionate second-year undergraduate Computer
-            Science student at JNU Jaipur University with expertise in graphic
-            design, UI/UX design, and web development. <br /> <br />
-            With a strong background in both front-end development and graphic
-            design, I have experience in developing web applications that
-            combine both aesthetics and functionality. My proficiency in C++
-            programming and a 5-star rating on Hackerrank have honed my
-            algorithmic problem-solving skills. <br /> <br />
-            My skillset includes C, HTML, CSS, Photoshop, Illustrator, Canva,
-            Figma, JavaScript, and proficiency in the Bootstrap framework. I'm
-            constantly striving to improve my skills and seek out new
-            challenges, and I'm particularly interested in exploring the
-            potential of back-end development. <br /> <br />
-            As a creative and motivated individual, I'm always on the lookout
-            for exciting opportunities to apply my knowledge and skills. If
-            you're looking for a reliable, detail-oriented designer and
-            developer, feel free to connect with me.
-          </Text>
+          <Container py={{ base: "2", md: "5" }}>
+            <Grid
+              justifyContent="center" // Center the grid items horizontally
+              alignItems="center" // Center the grid items vertically
+              templateColumns={{
+                base: "repeat(2, 1fr)",
+                md: "repeat(5, 1fr)",
+              }}
+              gap={3}
+            >
+              {skillItem.map((i) => (
+                <Image key={i.id} src={i.imageSrc} />
+              ))}
+            </Grid>
+          </Container>
         </Box>
         <Image
+          mt="24%"
           src={TubeLand}
           width={"200px"}
           alt="TubeLand"
           className="left-image"
         />
-    
       </Container>
     </Container>
   );
 };
 
-export default About;
+export default Skill;

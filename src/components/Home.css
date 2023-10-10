@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Fira Code', sans-serif;
+  background: #070707;
+}
+
+
 .left-image {
     
     transform: translateX(-70%); /* Move the image to the left completely */

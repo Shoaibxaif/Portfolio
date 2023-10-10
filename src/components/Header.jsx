@@ -53,7 +53,7 @@ export function PlacementExample() {
         <FaBars color="#607B96" />
       </Button>
 
-      <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
+      <Drawer placement="left" onClose={onClose} isOpen={isOpen}  bgColor="#607B96">
         <DrawerOverlay />
         <DrawerContent
           fontSize={"l"}

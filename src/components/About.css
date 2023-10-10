@@ -2,3 +2,12 @@
     vertical-align: bottom;
     color: blue;
 }
+
+.left-image {
+
+    
+    transform: translateY(20%); /* Move the image to the left completely */
+    transform: translateX(-60%); /* Move the image to the left completely */
+  }
+
+  
