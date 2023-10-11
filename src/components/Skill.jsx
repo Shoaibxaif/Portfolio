@@ -14,6 +14,13 @@ import commentIcon from "../Assests/comments-icon.svg";
 import Star from "../Assests/Star.svg";
 import TubeLand from "../Assests/TubeLand.png";
 import html from "../Assests/html.png";
+import css from "../Assests/css.png";
+import react from "../Assests/react.png";
+import bootstrap from "../Assests/bootsrap.png";
+import js from "../Assests/js.png";
+import figma from "../Assests/FIGMA.png";
+import git from "../Assests/git.png";
+import node from "../Assests/node.png";
 const Skill = () => {
   const skillItem = [
     {
@@ -21,46 +28,39 @@ const Skill = () => {
       imageSrc: html,
     },
     {
-      id: 1,
-      imageSrc: html,
+      id: 2,
+      imageSrc: css,
     },
     {
-      id: 1,
-      imageSrc: html,
+      id: 3,
+      imageSrc: js,
     },
     {
-      id: 1,
-      imageSrc: html,
+      id: 4,
+      imageSrc: bootstrap,
     },
     {
-      id: 1,
-      imageSrc: html,
+      id: 5,
+      imageSrc: react,
     },
     {
-      id: 1,
-      imageSrc: html,
+      id: 6,
+      imageSrc: node,
     },
     {
-      id: 1,
-      imageSrc: html,
+      id: 7,
+      imageSrc: figma,
     },
     {
-      id: 1,
-      imageSrc: html,
+      id: 8,
+      imageSrc: git,
     },
-    {
-      id: 1,
-      imageSrc: html,
-    },
-    {
-      id: 1,
-      imageSrc: html,
-    },
+    
   ];
 
   return (
     <Container maxW="full" maxH="120vh" bgColor="#070707" pt={5}>
-      <Container  maxH="120vh"  mt={5}>
+      <Container w={'l'}  maxH="120vh"  mt={5}>
         <HStack h={"60px"} p={2}>
           <Box flex="1">
             <HStack>
