@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Project from "./components/Project";
-import Footer from "./components/Footer";
 import Skill from "./components/Skill";
+import Contact from "./components/Contact";
 
 
 
@@ -18,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/project" element={<Project />} />
           <Route path="/skill" element={<Skill />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
      
       </Router>

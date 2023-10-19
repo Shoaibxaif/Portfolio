@@ -9,24 +9,23 @@ import {
   DrawerBody,
   useDisclosure,
   HStack,
-  Text,
   Spacer,
   Link,
   VStack,
   Divider,
+  Image,
 } from "@chakra-ui/react";
 
 import { FaBars } from "react-icons/fa";
 
-
+import Logo from "../Assests/Logo.svg"
+import LogoB from "../Assests/Logo_black.svg"
 
 const Header = () => {
   return (
     <>
       <HStack bgColor="#070707" p={3}>
-        <Text color="#607B96" fontSize={"large"}  fontWeight={"semibold"}>
-          _Shoaib
-        </Text>
+        <Image  h={"20px"} src={Logo}/>
 
         <Spacer />
         <PlacementExample />
@@ -61,26 +60,26 @@ export function PlacementExample() {
           color="#070707"
           fontWeight={"semibold"}
         >
-          <DrawerHeader borderBottomWidth="1px" > Shoaib </DrawerHeader>
+          <DrawerHeader borderBottomWidth="1px" > <Image  h={"20px"} src={LogoB}/> </DrawerHeader>
           <DrawerBody>
             <VStack
               alignItems={"flex-start"}
               style={{ textDecoration: "none" }}
             >
               <Link as={RouterLink} to="/" _hover={{ color: "white" }}>
-                _Hello
+                Hello
               </Link>
               <Link as={RouterLink} to="/about" _hover={{ color: "white" }}>
-                _About-me
+                About-me
               </Link>
               <Link as={RouterLink} to="/skill" _hover={{ color: "white" }}>
-                _Skills
+                Skills
               </Link>
               <Link as={RouterLink} to="/project" _hover={{ color: "white" }}>
-                _Projects
+                Projects
               </Link>
               <Link as={RouterLink} to="/contact" _hover={{ color: "white" }}>
-                _Contact-me
+                Contact-me
               </Link>
             </VStack>
           </DrawerBody>

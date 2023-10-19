@@ -10,8 +10,7 @@ import {
   Heading,
   Link,
   Button,
-  Flex,
-  Wrap,
+  Grid,
 } from "@chakra-ui/react";
 import React from "react";
 import "./Project.css";
@@ -47,6 +46,47 @@ const Project = () => {
         "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       link: "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
+    {
+      id: 4,
+      name: "Project 4",
+      description: "Description for Project 4",
+      image:
+        "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      link: "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    {
+      id: 4,
+      name: "Project 4",
+      description: "Description for Project 4",
+      image:
+        "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      link: "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    {
+      id: 4,
+      name: "Project 4",
+      description: "Description for Project 4",
+      image:
+        "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      link: "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    {
+      id: 4,
+      name: "Project 4",
+      description: "Description for Project 4",
+      image:
+        "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      link: "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    {
+      id: 4,
+      name: "Project 4",
+      description: "Description for Project 4",
+      image:
+        "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      link: "https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    
   ];
 
   return (
@@ -101,15 +141,24 @@ const Project = () => {
           border="1px solid #1E2D3D"
           mt={2}
         >
-          <Flex gap={2} alignItems={"center"} justifyContent={"center"}>
-            <Wrap>
-            
+
+
+<Container py={{ base: "2", md: "2" }} maxW={"container.xl"} >
+            <Grid
+              justifyContent="center" // Center the grid items horizontally
+              alignItems="center" // Center the grid items vertically
+              templateColumns={{
+                base: "repeat(1, 1fr)",
+                md: "repeat(4, 1fr)",
+              }}
+              gap={3}
+            >
                 {reactProjects.map((project) => (
                   <CustomCard key={project.id} project={project} />
                 ))}
-             
-            </Wrap>
-          </Flex>
+            </Grid>
+          </Container>
+         
         </Box>
       </Container>
     </Container>
@@ -118,7 +167,7 @@ const Project = () => {
 
 export const CustomCard = ({ project }) => {
   return (
-    <Card maxW={"sm"}>
+    <Card maxW={"xl"}>
       <CardBody bgColor="#1E2D3D" borderRadius={5}>
         <Image src={project.image} borderRadius="lg" />
         <Stack
