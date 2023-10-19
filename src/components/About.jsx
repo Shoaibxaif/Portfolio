@@ -8,7 +8,7 @@ import TubeLand from "../Assests/TubeLand.png";
 const About = () => {
   return (
     <Container maxW="full" maxH="120vh" bgColor="#070707" pt={5}>
-      <Container maxW="100%" maxH="120vh" overflow="hidden" position="relative">
+      <Container maxW="80%" maxH="120vh"  position="relative">
         <HStack h={"60px"} p={2}>
           <Box flex="1">
             <HStack>
