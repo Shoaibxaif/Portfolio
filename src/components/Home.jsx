@@ -108,6 +108,7 @@ const Home = () => {
             width={"200px"}
             alt="TubeLand"
             class="left-image"
+            mt={{base:"20",md:"10"}}
           />
         </Box>
 

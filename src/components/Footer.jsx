@@ -6,8 +6,9 @@ const Footer = () => {
     <Box
     bgColor={"#607B96"}
     minH={"20"}
-    px={"16"}
-    py={["16", "8"]}
+    py={"6"}
+   
+   
   >
     <Stack  alignItems={"center"}>
       
